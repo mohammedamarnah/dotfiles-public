@@ -28,6 +28,7 @@ lua <<EOF
     },
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
+      { name = 'async_clj_omni' },
     }, {
       { name = 'buffer' },
     }),

@@ -1,59 +1,20 @@
-![cover](./images/cover.png)
+# dotfiles
 
-# Takuya's dotfiles
+![cover](./images/sample.png)
 
-**Warning**: Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
-#### Looking for a Markdown note-taking app?
+This is a fork of [Takuya's dotfiles](https://github.com/craftzdog/dotfiles-public) with my own twist of Clojure support.
 
-Check out my app called Inkdrop:
+Note: No modifications were done on Takuya's plugins/configurations, just additions to add support for other languages.
 
-[![Inkdrop](./images/inkdrop.png)](https://www.inkdrop.app/)
-
-## Contents
-
-- vim (NeoVim) config
-  - Plugins are managed with [vim-plug](https://github.com/junegunn/vim-plug)
-- tmux config
-- git config
-- fish config
-
-## Vim setup
-
-Requires Neovim (>= 0.5)
-
-- [vim-plug](https://github.com/junegunn/vim-plug) - A minimalist Vim plugin manager
-- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) - A collection of configurations for Neovim's built-in LSP
-- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) - [Treesitter](https://github.com/tree-sitter/tree-sitter) configurations and abstraction layer for Neovim
-- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - A completion plugin for neovim coded in Lua
-- [lspsaga.nvim](https://github.com/tami5/lspsaga.nvim) - A light-weight LSP plugin based on Neovim built-in LSP with highly a performant UI
-- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - A highly extendable fuzzy finder over lists
-- [defx.nvim](https://github.com/Shougo/defx.nvim) - A file explorer
-
-## Shell setup
-
-- [Fish shell](https://fishshell.com/)
-- [Fisher](https://github.com/jorgebucaran/fisher) - Plugin manager
-- [Tide](https://github.com/IlanCosman/tide) - Shell theme. Use version 5: `fisher install ilancosman/tide@v5`
-- [Nerd fonts](https://github.com/ryanoasis/nerd-fonts) - Powerline-patched fonts. I use Hack.
-- [z for fish](https://github.com/jethrokuan/z) - Directory jumping
-- [Exa](https://the.exa.website/) - `ls` replacement
-- [ghq](https://github.com/x-motemen/ghq) - Local Git repository organizer
-- [peco](https://github.com/peco/peco) - Interactive filtering
-
-## How to use
-
-Watch my video tutorials:
-
-1. [My dev workflow using tmux and vim](https://www.youtube.com/watch?v=sSOfr2MtRU8&list=PLxQA0uNgQDCICMRwlOzWAZBPL05XBC_br&index=10)
-2. [My vim setup to speed up JavaScript coding for my Electron and React Native apps](https://www.youtube.com/watch?v=UZBjt04y4Oo&list=PLxQA0uNgQDCICMRwlOzWAZBPL05XBC_br&index=3)
-   - [Blogpost](https://dev.to/craftzdog/my-vim-setup-to-speed-up-javascript-coding-for-my-electron-and-react-native-apps-4ebp)
-3. [A productive command-line Git workflow for indie app developers](https://www.youtube.com/watch?v=qKpY7t5m35k&list=PLxQA0uNgQDCICMRwlOzWAZBPL05XBC_br&index=4)
-   - [Blogpost](https://dev.to/craftzdog/a-productive-command-line-git-workflow-for-indie-app-developers-k7d)
-4. [My Fish shell workflow for coding](https://www.youtube.com/watch?v=KKxhf50FIPI)
-
-## About me
-
-- [Twitter @inkdrop_app](https://twitter.com/inkdrop_app)
-- [Blog](https://blog.inkdrop.app/)
-- [My product: Inkdrop - Markdown note-taking app](https://www.inkdrop.app/)
+## Plugins
+- [nerdtree](https://github.com/preservim/nerdtree) - A tree explorer plugin for vim.
+   - [vim-devicons](https://github.com/ryanoasis/vim-devicons) - File icons for NERDTree and other plugins.
+- [tcomment_vim](https://github.com/tomtom/tcomment_vim) - An extensible & universal comment vim-plugin.
+- [ale](https://github.com/dense-analysis/ale) - Asynchronous syntax checker with Language Server Protocol (LSP) support.
+- [vim-fireplace](https://github.com/tpope/vim-fireplace) - Clojure REPL support for vim.
+- [vim-clojure-static](https://github.com/guns/vim-clojure-static) - Meikel Brandmeyer's excellent Clojure runtime files.
+- [vim-clojure-highlight](https://github.com/guns/vim-clojure-highlight) - Custom syntax highlighting that works for referred and aliased vars in Clojure buffers.
+- [deoplete.nvim](https://github.com/Shougo/deoplete.nvim) - Asynchronous auto completion framework for neovim and vim 8+.
+   - [async-clj-omni](https://github.com/clojure-vim/async-clj-omni) - Asynchronous Clojure completion that works with deoplete and other completion engines.
+- [clj-kondo](https://github.com/clj-kondo/clj-kondo) - A linter for Clojure code that sparks joy.

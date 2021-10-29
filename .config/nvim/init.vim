@@ -63,6 +63,15 @@ autocmd InsertLeave * set nopaste
 " Add asterisks in block comments
 set formatoptions+=r
 
+let g:deoplete#enable_at_startup = 1
+
+"}}}
+
+" Linting "{{{
+
+let g:ale_linters = {'clojure': ['clj-kondo']}
+let g:clojure_align_multiline_strings = 0
+
 "}}}
 
 " Highlights "{{{

@@ -26,6 +26,15 @@ if has("nvim")
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'windwp/nvim-autopairs'
+  Plug 'preservim/nerdtree'
+  Plug 'ryanoasis/vim-devicons'
+  Plug 'tomtom/tcomment_vim'
+  Plug 'dense-analysis/ale'
+  Plug 'tpope/vim-fireplace'
+  Plug 'guns/vim-clojure-static'
+  Plug 'guns/vim-clojure-highlight'
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'clojure-vim/async-clj-omni'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }

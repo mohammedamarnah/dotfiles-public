@@ -9,6 +9,10 @@ nnoremap x "_x
 nnoremap + <C-a>
 nnoremap - <C-x>
 
+" Comment stuff out
+nnoremap // :TComment<CR>
+vnoremap // :TComment<CR>
+
 " Delete a word backwards
 nnoremap dw vb"_d
 
@@ -37,6 +41,9 @@ vnoremap <silent> # :<C-U>
 nmap te :tabedit 
 nmap <S-Tab> :tabprev<Return>
 nmap <Tab> :tabnext<Return>
+map <S-t> :NERDTreeFind<CR>
+map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowBookmarks=1
 
 "------------------------------
 " Windows
