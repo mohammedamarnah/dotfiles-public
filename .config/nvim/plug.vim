@@ -33,7 +33,6 @@ if has("nvim")
   Plug 'tpope/vim-fireplace'
   Plug 'guns/vim-clojure-static'
   Plug 'guns/vim-clojure-highlight'
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'clojure-vim/async-clj-omni'
 endif
 

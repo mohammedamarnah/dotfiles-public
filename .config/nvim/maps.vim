@@ -13,8 +13,8 @@ nnoremap - <C-x>
 nnoremap // :TComment<CR>
 vnoremap // :TComment<CR>
 
-" Delete a word backwards
-nnoremap dw vb"_d
+command StripWhiteSpaces :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+
 
 " Select all
 nmap <C-a> gg<S-v>G
