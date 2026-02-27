@@ -159,6 +159,9 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists('s:std_in
 " Exit Vim if NERDTree is the only window remaining
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
+" ---------- CoC Settings ----------
+let g:coc_user_config = {'suggest.noselect': v:true}
+
 " ---------- Git Gutter ----------
 set updatetime=100              " Update git gutter more frequently (default is 4000ms)
 
