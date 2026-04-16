@@ -41,6 +41,10 @@ Plug 'ryanoasis/vim-devicons'             " File icons (install Nerd Font first)
 Plug 'Yggdroot/indentLine'                " Display indentation levels
 Plug 'airblade/vim-gitgutter'             " Show git diff in the sign column
 
+" ---------- Fuzzy Finder ----------
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
 
 " Tab to navigate and confirm completion
