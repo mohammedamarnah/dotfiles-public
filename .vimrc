@@ -135,8 +135,16 @@ let g:indentLine_char = '│'     " Character to use for indent lines
 let g:indentLine_enabled = 1    " Enable by default
 
 " ---------- NERDTree Configuration ----------
-" Toggle NERDTree with Tab in normal mode (doesn't conflict with coc.nvim)
-nnoremap <Tab> :NERDTreeToggle<CR>
+" Toggle NERDTree with Tab - opens at current file's directory
+nnoremap <Tab> :call NERDTreeToggleFind()<CR>
+
+function! NERDTreeToggleFind()
+  if g:NERDTree.IsOpen()
+    NERDTreeClose
+  else
+    NERDTreeFind
+  endif
+endfunction
 
 " NERDTree default mappings (work when cursor is in NERDTree window):
 " - Press 'o' to open a file or directory (default NERDTree)
