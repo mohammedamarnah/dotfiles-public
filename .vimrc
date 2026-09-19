@@ -194,6 +194,8 @@ nnoremap <silent> <Esc> :nohlsearch<CR>
 nnoremap <C-s> :w<CR>
 inoremap <C-s> <Esc>:w<CR>a
 
+autocmd BufWritePre * :%s/\s\+$//e
+
 " ============================================================================
 " NOTES FOR FUTURE CONFIGURATION
 " ============================================================================
